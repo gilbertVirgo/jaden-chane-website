@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Jaden &amp; Chané — February 2027</title>
+<meta name="description" content="Everything you need for Jaden & Chané's wedding: schedule, details, where to stay, FAQs and RSVP.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@400;500&family=Pinyon+Script&display=swap">
+<style>
+:root {
+  --ground: #EDE8E1;
+  --card: #F5F1EB;
+  --band: #E3DDD4;
+  --ink: #3B2F27;
+  --body: #4F4237;
+  --muted: #6E5F52;
+  --line: #DCD3C7;
+  --rule: #CFC5B8;
+  --accent: #8F4B22;
+  --dark-muted: #BFAF9F;
+  --dark-accent: #E2B48E;
+  --dark-line: #5A4A3E;
+  --pad: clamp(20px, 5vw, 48px);
+  --section: clamp(64px, 9vw, 128px);
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --script: 'Pinyon Script', cursive;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--ground); color: var(--ink); font: 17px/1.65 'Jost', system-ui, sans-serif; }
+a { color: var(--accent); }
+a:hover { color: var(--ink); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+h1, h2, h3, p { margin: 0; }
+.wrap { max-width: 1200px; margin: 0 auto; padding: var(--section) var(--pad); }
+.split { display: flex; flex-wrap: wrap; gap: 40px 80px; }
+.split > :first-child { flex: 1 1 280px; }
+.split > :last-child { flex: 999 1 480px; min-width: 0; }
+.dark { background: var(--ink); color: var(--ground); }
+.eyebrow { font-size: 13px; letter-spacing: .28em; text-transform: uppercase; color: var(--accent); }
+.dark .eyebrow { color: var(--dark-accent); }
+.h2 { margin-top: 12px; font: italic 400 clamp(40px, 5vw, 64px)/1.05 var(--serif); }
+.lede { font: clamp(22px, 2.2vw, 26px)/1.45 var(--serif); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.pill { display: inline-flex; align-items: center; min-height: 48px; padding: 0 32px; border: 1.5px solid var(--accent); border-radius: 999px; color: var(--accent); text-decoration: none; font-size: 13px; letter-spacing: .16em; text-transform: uppercase; }
+.pill.solid { background: var(--accent); color: #fff; }
+.pill:hover { background: var(--ink); border-color: var(--ink); color: var(--ground); }
+.placeholder { display: flex; align-items: center; justify-content: center; background: #DDD5CA; border: 1px dashed #B5A896; color: var(--muted); font-size: 13px; letter-spacing: .18em; text-transform: uppercase; text-align: center; }
+
+/* Header */
+header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; max-width: 1200px; margin: 0 auto; padding: 24px var(--pad); }
+.mono { font: 34px/1 var(--script); color: var(--ink); text-decoration: none; }
+nav { display: flex; flex-wrap: wrap; gap: 4px 28px; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; }
+nav a { color: var(--ink); text-decoration: none; padding: 10px 0; }
+nav a:hover { color: var(--accent); }
+header .pill { min-height: 44px; padding: 0 28px; }
+
+/* Hero */
+.hero { max-width: 1200px; margin: 0 auto; padding: clamp(40px, 7vw, 96px) var(--pad) 0; text-align: center; }
+.hero h1 { margin-top: 12px; font: 400 clamp(64px, 13vw, 176px)/1.05 var(--script); }
+.date { margin-top: 20px; font: clamp(22px, 2.6vw, 30px)/1.35 var(--serif); }
+.venue { margin-top: 4px; font: italic clamp(20px, 2.2vw, 26px)/1.35 var(--serif); color: var(--muted); }
+.countdown { display: flex; justify-content: center; gap: clamp(12px, 3vw, 40px); margin-top: 40px; }
+.countdown div { display: flex; flex-direction: column; align-items: center; min-width: 84px; }
+.countdown hr { width: 1px; margin: 0; border: 0; background: var(--rule); }
+.countdown b { font: 400 clamp(40px, 5vw, 60px)/1 var(--serif); }
+.countdown span { margin-top: 8px; font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); }
+.hero-photo { display: block; margin-top: clamp(48px, 6vw, 80px); aspect-ratio: 16 / 7; min-height: 280px; width: 100%; height: auto; object-fit: cover; }
+
+/* Photo strip */
+.strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(6px, 1vw, 12px); padding: clamp(6px, 1vw, 12px) clamp(6px, 1vw, 12px) 0; background: var(--ink); }
+.strip img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
+
+/* Welcome */
+.welcome .split { align-items: center; }
+.welcome img { width: 100%; max-width: 440px; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
+.welcome .split > :last-child { max-width: 640px; }
+.welcome svg { color: var(--accent); }
+.welcome .h2 { margin: 12px 0 28px; }
+.welcome .big { font: clamp(24px, 2.4vw, 30px)/1.4 var(--serif); }
+.welcome p + p { margin-top: 20px; color: var(--body); }
+.welcome strong { font-weight: 500; }
+.sign { font: 32px/1.2 var(--script) !important; color: var(--ink) !important; }
+
+/* Schedule */
+.schedule .intro { margin-top: 20px; max-width: 320px; color: var(--dark-muted); }
+.schedule ol { list-style: none; margin: 0; padding: 0; border-bottom: 1px solid var(--dark-line); }
+.schedule li { display: grid; grid-template-columns: 96px 1fr; gap: 24px; padding: 20px 0; border-top: 1px solid var(--dark-line); }
+.schedule time { font: 28px/1.2 var(--serif); color: var(--dark-accent); }
+.schedule strong { display: block; font: 400 26px/1.25 var(--serif); }
+.schedule small { display: block; margin-top: 4px; font-size: 17px; color: var(--dark-muted); }
+
+/* Cards */
+.cards { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 48px; }
+.card { flex: 1 1 300px; padding: 32px; background: var(--card); border: 1px solid var(--line); }
+.card h3 { font: 500 28px/1.2 var(--serif); }
+.card p { margin-top: 12px; color: var(--body); }
+
+/* Stay */
+.stay { background: var(--band); }
+.stay .wrap > p:not(.eyebrow) { margin-top: 20px; max-width: 620px; color: var(--body); }
+.table-box { margin-top: 40px; overflow-x: auto; border: 1px solid var(--rule); background: var(--card); }
+table { width: 100%; min-width: 640px; border-collapse: collapse; font-size: 16px; }
+thead th { padding: 18px 24px; text-align: left; font-size: 12px; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--rule); }
+tbody th, td { padding: 20px 24px; text-align: left; border-bottom: 1px solid var(--band); }
+tbody tr:last-child > * { border-bottom: 0; }
+tbody th { font: 500 22px var(--serif); }
+td:last-child { text-align: right; }
+.travel { display: flex; flex-wrap: wrap; gap: 24px 64px; margin-top: 48px; }
+.travel div { flex: 1 1 240px; }
+.travel h3 { font-size: 12px; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
+.travel p { margin-top: 8px; font: 22px/1.35 var(--serif); }
+
+/* Registry */
+.registry { max-width: 760px; text-align: center; }
+.registry .lede { margin-top: 24px; }
+.registry .pill { margin-top: 32px; }
+
+/* Join in */
+.join { padding-top: 0; display: flex; flex-wrap: wrap; gap: 24px; }
+.join .card { flex: 1 1 360px; padding: 40px; }
+.join .card:first-child { display: flex; flex-wrap: wrap; gap: 24px; align-items: center; }
+.join .card:first-child > div:last-child { flex: 1 1 200px; }
+.join .card:first-child p { margin-top: 8px; }
+.qr { width: 112px; height: 112px; flex: none; font-size: 12px; background: var(--ground); }
+.join .card .pill { margin-top: 20px; }
+
+/* FAQ */
+.faq-band { background: var(--card); border-top: 1px solid var(--line); }
+.faq { border-top: 1px solid var(--rule); }
+details { border-bottom: 1px solid var(--rule); }
+summary { display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 44px; padding: 20px 0; list-style: none; cursor: pointer; font: 24px/1.3 var(--serif); }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: '+'; font: 400 24px 'Jost', sans-serif; color: var(--accent); transition: transform .2s; }
+details[open] summary::after { transform: rotate(45deg); }
+details p { margin: 0 0 24px; max-width: 620px; color: var(--body); }
+
+/* RSVP */
+.rsvp { text-align: center; }
+.rsvp .wrap { max-width: 760px; padding-block: clamp(72px, 10vw, 136px); }
+.rsvp h2 { font: 400 clamp(56px, 8vw, 104px)/1.1 var(--script); }
+.rsvp .lede { margin-top: 20px; color: var(--dark-muted); }
+.rsvp .pill { margin-top: 36px; min-height: 52px; padding: 0 44px; background: var(--ground); border-color: var(--ground); color: var(--ink); letter-spacing: .18em; }
+.rsvp .pill:hover { background: var(--dark-accent); border-color: var(--dark-accent); }
+footer { padding: 24px var(--pad) 40px; border-top: 1px solid var(--dark-line); font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--dark-muted); }
+</style>
+</head>
+<body>
+
+<header>
+  <a class="mono" href="#top" aria-label="Jaden and Chané, back to top">J &amp; C</a>
+  <nav aria-label="Sections">
+    <a href="#schedule">Schedule</a>
+    <a href="#details">Details</a>
+    <a href="#stay">Stay</a>
+    <a href="#registry">Registry</a>
+    <a href="#faq">FAQs</a>
+  </nav>
+  <a class="pill" href="#rsvp">RSVP</a>
+</header>
+
+<main>
+<section class="hero" id="top">
+  <p class="eyebrow">We're getting married</p>
+  <h1>Jaden &amp; Chané</h1>
+  <p class="date">[Day], [DD] February 2027</p>
+  <p class="venue">[Venue name], [Town]</p>
+  <div class="countdown" role="timer" aria-label="Countdown to the wedding">
+    <div><b id="cd-days">––</b><span>Days</span></div>
+    <hr aria-hidden="true">
+    <div><b id="cd-hours">––</b><span>Hours</span></div>
+    <hr aria-hidden="true">
+    <div><b id="cd-mins">––</b><span>Minutes</span></div>
+  </div>
+  <img class="hero-photo" src="images/hero.jpg" width="2400" height="1600" alt="Jaden and Chané walking hand in hand on the beach">
+
+</section>
+
+<section class="welcome">
+  <div class="wrap split">
+    <img src="images/welcome.jpg" width="1200" height="1800" loading="lazy" alt="Jaden and Chané on the beach, foreheads touching">
+    <div>
+      <svg width="48" height="48" viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" aria-hidden="true"><path d="M28 52C28 38 28 22 28 6"/><path d="M28 40C20 38 15 33 14 26C21 27 26 32 28 40Z"/><path d="M28 32C36 30 41 25 42 18C35 19 30 24 28 32Z"/><path d="M28 22C22 20 19 15 19 10C24 11 27 16 28 22Z"/></svg>
+      <h2 class="h2">Welcome</h2>
+      <p class="big">We can't wait to celebrate with the people we love most — and that means you.</p>
+      <p>Everything you need for the day is here: when to arrive, what to wear, where to stay, and answers to (hopefully) every question. Please let us know if you can make it by <strong>[RSVP deadline]</strong>.</p>
+      <p class="sign">Love, Jaden &amp; Chané</p>
+    </div>
+  </div>
+</section>
+
+<section class="schedule dark" id="schedule">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">Schedule</p>
+      <h2 class="h2">The day</h2>
+      <p class="intro">Please arrive from 16:00 so you're settled before the ceremony begins at 16:30.</p>
+    </div>
+    <ol>
+      <li><time>16:00</time><span><strong>Guests arrive</strong><small>Welcome drinks on arrival</small></span></li>
+      <li><time>16:30</time><span><strong>Ceremony begins</strong><small>An unplugged ceremony — phones away, please</small></span></li>
+      <li><time>17:30</time><strong>Confetti &amp; congratulations</strong></li>
+      <li><time>17:40</time><strong>Canapés &amp; cocktails</strong></li>
+      <li><time>19:15</time><strong>Dinner seating</strong></li>
+      <li><time>19:30</time><strong>Dinner</strong></li>
+      <li><time>20:15</time><strong>Speeches</strong></li>
+      <li><time>21:30</time><strong>Dance floor opens</strong></li>
+      <li><time>[00:00]</time><strong>Carriages — the evening ends</strong></li>
+    </ol>
+  </div>
+</section>
+
+<section class="wrap" id="details">
+  <p class="eyebrow">Details</p>
+  <h2 class="h2">Good to know</h2>
+  <div class="cards">
+    <article class="card"><h3>Dress code</h3><p>[Dress code — e.g. garden formal.] The ceremony is on grass, so block heels or flats will be your friends.</p></article>
+    <article class="card"><h3>Weather</h3><p>February is high summer — expect a warm day and a balmy evening, with the chance of a late-afternoon shower. Sunglasses over jackets.</p></article>
+    <article class="card"><h3>An outdoor wedding</h3><p>We'll say “I do” outside. If the weather has other plans, there's a lovely chapel on site, so we're covered rain or shine.</p></article>
+    <article class="card"><h3>Parking</h3><p>Plenty of it. There's a large grassed area on your right as you drive into the venue.</p></article>
+    <article class="card"><h3>Menu &amp; dietary needs</h3><p>[Menu to be announced.] Gluten-free options will be available — tell us about any other dietary needs on your RSVP.</p></article>
+    <article class="card"><h3>Little ones</h3><p>There's a jungle gym at the venue, a kids' area by the chapel, and a little table of their own at dinner for under-7s.</p></article>
+  </div>
+</section>
+
+<section class="stay" id="stay">
+  <div class="wrap">
+    <p class="eyebrow">Accommodation &amp; travel</p>
+    <h2 class="h2">Where to stay</h2>
+    <p>Travelling in? Here are a few places nearby, from closest to furthest. Book early — February is busy.</p>
+    <div class="table-box">
+      <table>
+        <thead><tr><th scope="col">Where</th><th scope="col">Per night</th><th scope="col">To the venue</th><th scope="col">Breakfast</th><th scope="col"><span class="sr">Booking link</span></th></tr></thead>
+        <tbody>
+          <tr><th scope="row">[Place A]</th><td>R[000]</td><td>[5] min drive</td><td>[Included]</td><td><a href="#">Book</a></td></tr>
+          <tr><th scope="row">[Place B]</th><td>R[000]</td><td>[10] min drive</td><td>[Not included]</td><td><a href="#">Book</a></td></tr>
+          <tr><th scope="row">[Place C]</th><td>R[000]</td><td>[15] min drive</td><td>[Included]</td><td><a href="#">Book</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="travel">
+      <div><h3>Nearest airport</h3><p>[Airport] · [00] min drive</p></div>
+      <div><h3>Getting home</h3><p>[Recommended taxi / shuttle]</p></div>
+      <div><h3>Venue address</h3><p>[Venue address] · <a href="#">Map</a></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap registry" id="registry">
+  <p class="eyebrow">Registry</p>
+  <h2 class="h2">Gifts</h2>
+  <p class="lede">Having you there is the gift. If you'd like to give something more, we've put together a small registry for our new home together.</p>
+  <a class="pill solid" href="#">View our registry</a>
+</section>
+
+<section class="wrap join">
+  <article class="card">
+    <div class="qr placeholder" role="img" aria-label="QR code for the shared photo album">[QR]</div>
+    <div>
+      <h3>Share your photos</h3>
+      <p>Captured something lovely at the reception? Add it to our shared album.</p>
+      <a class="pill" href="#">Open the album</a>
+    </div>
+  </article>
+  <article class="card">
+    <h3>Request a song</h3>
+    <p>What will get you on the dance floor? Tell us and we'll pass it to the DJ.</p>
+    <a class="pill" href="#">Request a song</a>
+  </article>
+</section>
+
+<section class="faq-band" id="faq">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">FAQs</p>
+      <h2 class="h2">Questions</h2>
+    </div>
+    <div class="faq">
+      <details><summary>Can I bring a plus-one?</summary><p>We'd love to celebrate with everyone, but we're keeping things intimate, so we can't accommodate plus-ones. Your invitation names everyone we've invited.</p></details>
+      <details><summary>Are children welcome?</summary><p>If your invitation is addressed to your family (“The … family”), your children are invited too — we can't wait to see them.</p></details>
+      <details><summary>Is there an area for kids?</summary><p>Yes. There's a jungle gym at the venue and a kids' area by the chapel, and under-7s will have their own little table at dinner. We're also looking into a babysitter for the day — more on that soon.</p></details>
+      <details><summary>What time should I arrive?</summary><p>From 16:00, so you have time to park, grab a drink and find a seat before the ceremony starts at 16:30. The full day is in our <a href="#schedule">schedule</a>.</p></details>
+      <details><summary>Is there parking?</summary><p>Yes — there's a large grassed area on your right as you drive into the venue, with plenty of space for everyone.</p></details>
+      <details><summary>Can I take photos during the ceremony?</summary><p>Unfortunately not. We'd really love you to be present with us during the ceremony, so our photographer will capture every moment. Once the reception starts, snap away — and add your favourites to our shared album.</p></details>
+      <details><summary>Will I need a coat?</summary><p>It's February, so almost certainly not — expect a warm summer evening. Leave the coat at home and bring your dancing shoes.</p></details>
+      <details><summary>What happens if it rains?</summary><p>There's a lovely chapel on site, so if the weather isn't on our side we'll simply move inside. Nothing you need to plan for.</p></details>
+      <details><summary>Is the venue wheelchair accessible?</summary><p>Yes, it is. If there's anything that would make the day easier for you, just let us know on your RSVP.</p></details>
+      <details><summary>What time does the evening finish?</summary><p>The party winds down at [00:00] — see the <a href="#schedule">schedule</a> for the full evening.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="strip" aria-label="Engagement photos">
+  <img src="images/ring.jpg" width="900" height="1350" loading="lazy" alt="Close-up of a kiss on Chané's hand and the engagement ring">
+  <img src="images/embrace.jpg" width="900" height="1350" loading="lazy" alt="Jaden and Chané sitting in the sand, wrapped in a hug">
+  <img src="images/laughing.jpg" width="900" height="1350" loading="lazy" alt="Black and white photo of Jaden and Chané laughing together">
+</section>
+</main>
+
+<section class="rsvp dark" id="rsvp">
+  <div class="wrap">
+    <h2>Will you join us?</h2>
+    <p class="lede">Kindly reply by [RSVP deadline]. Let us know about any dietary needs while you're there.</p>
+    <a class="pill" href="#">RSVP</a>
+  </div>
+  <footer>Jaden &amp; Chané · February 2027</footer>
+</section>
+
+<script>
+  // Set once confirmed, e.g. '2027-02-20T16:30:00+02:00'. Until then the countdown shows dashes.
+  const WEDDING_DATE = null;
+  function tick() {
+    const ms = WEDDING_DATE ? new Date(WEDDING_DATE) - Date.now() : 0;
+    if (ms <= 0) return;
+    document.getElementById('cd-days').textContent = Math.floor(ms / 864e5);
+    document.getElementById('cd-hours').textContent = Math.floor(ms / 36e5) % 24;
+    document.getElementById('cd-mins').textContent = Math.floor(ms / 6e4) % 60;
+  }
+  tick();
+  setInterval(tick, 30000);
+</script>
+</body>
+</html>
